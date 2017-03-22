@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Test Page</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<!-- different browsers support different audio types so we give options. Browser tries first source, then skips over types it doesn't know until it finds format that it does know. Good to add fall back content if someone's browser is too old for any of the options. Maybe add link to update their browser. Audacity is good free audio converter. -->
+	<audio controls> <!-- controls attribute adds play/pause buttons, can also be autoplay or loop attributes --> 
+		<source src="audio.mp3" type="audio/mps">
+		<source src="audio.ogg" type="audio/ogg">
+		<!-- fall back content here --> 
+		<p>Sorry your browser doesn't support HTML5 Audio! Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a>.</p>
+	</audio>
+
+<!-- same issue as audio, not all browsers support same formats for video. Check out: http://caniuse.com/ -mp4 is most widely supported. Need minimum of two formats to support 100% of browsers. Miro Video Converter is good resource. There are custom JS video players- if you want single file format that can play on any browser, but HTML5 is still good. -->
+	<video controls>
+		<source src="movie.mp4" type="video/mp4"> <!-- Safari and IE -->
+		<source src="movie.ogv" type="video/ogg"> <!-- Firefox, Chrome, Opera -->
+		<source src="movie.webm" type="video/webm">
+		<!-- fall back content here --> 
+	</video>
+</body>
+</html>
