@@ -5,6 +5,12 @@
 	<title>Sample Job Boards Project</title>
 </head>
 <body>
+	<div class="wrapper">
+	<!-- Notice that in cases where the content within the element is not semantically related or we have the need to simply create a generic box such as the wrapper, we can still use divs as we please. --> 
+	<header>
+		<!-- All of the content in the <header> is relating to introductory content or containing navigational aids, just like the head of a document. -->
+		<nav>....</nav>
+	</header>
 	<h1>
 		<strong>Targaryen Dragon Trainer's Sample Job Boards</strong>
 	</h1>
@@ -12,7 +18,16 @@
 	<h3>
 		<em>Welcome, select a job board below. Options 1 and 2 rely on the Greenhouse iframe, options 3-5 rely on the Job Board API. *Github Pages test</em>
 	</h3>
-	<br>
+	<!--  As a developer there are no hard rules of how to configure these elements. We only have their intended meaning to work off of, so you should feel comfortable configuring them in a way that makes the most sense to you and best suits your layout needs. The following descriptions are as they are stated from Mozilla Developer Networks documentation. --> 
+	<main>
+		<section id="article-examples">
+			<article id="article-def">
+				<h5>Articles elements represent a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or resubale. This could be a forum post, a magainze, or newspapaer sarticle, a blog entry, an object, or any other independent item of content. Each article should be identified, typically by including a heading h1-h6 as the child of the article element.</h5>
+			</article>
+			<article id="dragon2">...</article>
+		</section>
+	</main>
+	<aside>...</aside>
 	<ul>
 		<li>Option 1</li>
 		<li>Option 2</li>
@@ -22,5 +37,7 @@
 	</ul>
 	<br>
 	<a href="mailto:test@gmail.com">Email me!</a>
+	<footer>...</footer>
 </body>
+</div>
 </html>
